@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import "modern-normalize";
 
 body {
   margin: 0;
@@ -12,4 +12,29 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  padding: 5px 8px;
+
+  transition: background-color 300ms linear, color 300ms linear;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(59, 59, 255);
+  color: white;
+}
+
+#root{
+  text-align: center;
 }
